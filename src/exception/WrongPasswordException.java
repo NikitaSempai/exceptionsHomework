@@ -1,8 +1,7 @@
 package exception;
 
-public class WrongPasswordException extends RuntimeException{
-    @Override
-    public String getMessage() {
-        return "Wrong password format.";
+public class WrongPasswordException extends Exception{
+    public WrongPasswordException(String error) {
+        super(error);
     }
 }

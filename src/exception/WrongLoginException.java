@@ -1,9 +1,7 @@
 package exception;
 
-public class WrongLoginException extends RuntimeException {
-    @Override
-    public String getMessage() {
-        return "Wrong login format.";
+public class WrongLoginException extends Exception {
+    public WrongLoginException(String error) {
+        super(error);
     }
-
 }
